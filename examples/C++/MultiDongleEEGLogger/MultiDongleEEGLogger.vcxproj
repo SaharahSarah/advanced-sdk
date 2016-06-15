@@ -68,6 +68,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>../../../bin/win32</OutDir>
     <IntDir>../build/$(ProjectName)/$(ConfigurationName)</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>../../../bin/win64</OutDir>
@@ -104,7 +106,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>$(OutDir)/$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>../../../lib/win64;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>edk.lib;</AdditionalDependencies>
+      <AdditionalDependencies>edk.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,7 +121,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <OutputFile>$(OutDir)/$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>../../../lib/win32;</AdditionalLibraryDirectories>
       <AdditionalDependencies>edk.lib</AdditionalDependencies>
     </Link>
@@ -138,7 +140,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(OutDir)/$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>../../../lib/win64;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>edk.lib;</AdditionalDependencies>
+      <AdditionalDependencies>edk.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

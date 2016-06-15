@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EEGLogger", "EEGLogger\EEGL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiDongleEEGLogger", "MultiDongleEEGLogger\MultiDongleEEGLogger.vcxproj", "{EA64E907-B4A3-40E7-9732-8DBF73348DFD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerformanceMetricsDemo", "PerformanceMetricsDemo\PerformanceMetricsDemo.vcxproj", "{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -41,6 +43,14 @@ Global
 		{EA64E907-B4A3-40E7-9732-8DBF73348DFD}.Release|Win32.Build.0 = Release|Win32
 		{EA64E907-B4A3-40E7-9732-8DBF73348DFD}.Release|x64.ActiveCfg = Release|x64
 		{EA64E907-B4A3-40E7-9732-8DBF73348DFD}.Release|x64.Build.0 = Release|x64
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Debug|Win32.Build.0 = Debug|Win32
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Debug|x64.ActiveCfg = Debug|x64
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Debug|x64.Build.0 = Debug|x64
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Release|Win32.ActiveCfg = Release|Win32
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Release|Win32.Build.0 = Release|Win32
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Release|x64.ActiveCfg = Release|x64
+		{CC8344C8-327C-4FE2-8E72-43B317EF4CC9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

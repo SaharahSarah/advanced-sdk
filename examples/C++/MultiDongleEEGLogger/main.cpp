@@ -55,8 +55,11 @@ double* data2[100]     ;
 unsigned int numberOfSample1 = 0;
 unsigned int numberOfSample2 = 0;
 
-#ifdef __linux__
+#if __linux__ || __APPLE__
+#include <unistd.h>
+#include <termios.h>
 int _kbhit(void);
+int _getch(void);
 #endif
 
 int main(int argc,char** argv[])
@@ -253,21 +256,66 @@ int main(int argc,char** argv[])
 #ifdef __linux__
 int _kbhit(void)
 {
-    struct timeval tv;
-    fd_set read_fd;
+	struct timeval tv;
+	fd_set read_fd;
 
-    tv.tv_sec=0;
-    tv.tv_usec=0;
+	tv.tv_sec=0;
+	tv.tv_usec=0;
 
-    FD_ZERO(&read_fd);
-    FD_SET(0,&read_fd);
+	FD_ZERO(&read_fd);
+	FD_SET(0,&read_fd);
 
-    if(select(1, &read_fd,NULL, NULL, &tv) == -1)
-    return 0;
+	if(select(1, &read_fd,NULL, NULL, &tv) == -1)
+		return 0;
 
-    if(FD_ISSET(0,&read_fd))
-        return 1;
+	if(FD_ISSET(0,&read_fd))
+		return 1;
 
-    return 0;
+	return 0;
+}
+
+int _getch(void)
+{
+	struct termios oldattr, newattr;
+	int ch;
+
+	tcgetattr(STDIN_FILENO, &oldattr);
+	newattr = oldattr;
+	newattr.c_lflag &= ~(ICANON | ECHO);
+	tcsetattr(STDIN_FILENO, TCSANOW, &newattr);
+	ch = getchar();
+	tcsetattr(STDIN_FILENO, TCSANOW, &oldattr);
+
+	return ch;
+}
+#endif
+#ifdef __APPLE__
+int _kbhit(void)
+{
+	struct timeval tv;
+	fd_set rdfs;
+
+	tv.tv_sec = 0;
+	tv.tv_usec = 0;
+
+	FD_ZERO(&rdfs);
+	FD_SET(STDIN_FILENO, &rdfs);
+
+	select(STDIN_FILENO + 1, &rdfs, NULL, NULL, &tv);
+	return FD_ISSET(STDIN_FILENO, &rdfs);
+}
+
+int _getch(void)
+{
+	int r;
+	unsigned char c;
+	if ((r = read(0, &c, sizeof(c))) < 0)
+	{
+		return r;
+	}
+	else
+	{
+		return c;
+	}
 }
 #endif
