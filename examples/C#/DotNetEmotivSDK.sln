@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceMetric", "Perfor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EEG_Data_Logger", "EEG_Data_Logger\EEG_Data_Logger.csproj", "{FDC029BE-96C3-4D8A-8BE8-618D580BE007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetEmotivSDK", "..\..\include\DotNetEmotivSDK\DotNetEmotivSDK.csproj", "{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,16 +37,6 @@ Global
 		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x64.Build.0 = Release|x64
 		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x86.ActiveCfg = Release|x86
 		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x86.Build.0 = Release|x86
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x64.ActiveCfg = Debug|x64
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x64.Build.0 = Debug|x64
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x86.ActiveCfg = Debug|x86
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x86.Build.0 = Debug|x86
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|Any CPU.ActiveCfg = Release|x86
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x64.ActiveCfg = Release|x64
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x64.Build.0 = Release|x64
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x86.ActiveCfg = Release|x86
-		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
