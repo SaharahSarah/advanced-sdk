@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceMetric", "PerformanceMetric\PerformanceMetric.csproj", "{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EEG_Data_Logger", "EEG_Data_Logger\EEG_Data_Logger.csproj", "{FDC029BE-96C3-4D8A-8BE8-618D580BE007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetEmotivSDK", "..\..\include\DotNetEmotivSDK\DotNetEmotivSDK.csproj", "{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Debug|x64.ActiveCfg = Debug|x64
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Debug|x64.Build.0 = Debug|x64
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Debug|x86.ActiveCfg = Debug|x86
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Debug|x86.Build.0 = Debug|x86
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Release|Any CPU.ActiveCfg = Release|x86
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Release|x64.ActiveCfg = Release|x64
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Release|x64.Build.0 = Release|x64
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Release|x86.ActiveCfg = Release|x86
+		{374D51CD-5F57-4145-8A61-9CBAB5E0F6D7}.Release|x86.Build.0 = Release|x86
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Debug|x64.ActiveCfg = Debug|x64
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Debug|x64.Build.0 = Debug|x64
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Debug|x86.ActiveCfg = Debug|x86
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Debug|x86.Build.0 = Debug|x86
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|Any CPU.ActiveCfg = Release|x86
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x64.ActiveCfg = Release|x64
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x64.Build.0 = Release|x64
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x86.ActiveCfg = Release|x86
+		{FDC029BE-96C3-4D8A-8BE8-618D580BE007}.Release|x86.Build.0 = Release|x86
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x64.ActiveCfg = Debug|x64
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x64.Build.0 = Debug|x64
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x86.ActiveCfg = Debug|x86
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Debug|x86.Build.0 = Debug|x86
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|Any CPU.ActiveCfg = Release|x86
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x64.ActiveCfg = Release|x64
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x64.Build.0 = Release|x64
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x86.ActiveCfg = Release|x86
+		{DCBDECC2-071E-4FFE-A2AE-5147A0FE08EE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

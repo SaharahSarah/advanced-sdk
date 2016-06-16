@@ -154,10 +154,10 @@ int main(int argc, char** argv) {
 
 
 void logPerformanceMetricScore(std::ostream& os, unsigned int userID,
-                               EmoStateHandle eState, bool withHeader) {
+    EmoStateHandle eState, bool writeHeader) {
 
 	// Create the top header
-	if (withHeader) {
+    if (writeHeader) {
 		os << "Time,";
 		os << "UserID,";
 		os << "Stress raw score,";
